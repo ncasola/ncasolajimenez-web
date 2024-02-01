@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Septiembre 2022 - Actualidad",
+    title: "Desarrollador Web Full-Stack - HolaSoft",
+    description:
+      "Jefe del departamento de desarrollo de HolaSoft - Responsable de la plataforma, componentes y utilidades para la creación y \
+      desarrollo de aplicaciones web integradas en HolaERP, además del despliegue de la infraestructura cloud necesaria para su funcionamiento.",
+    link: "https://holasoft.es",
+  },
+  {
+    date: "Abril 2017 - Septiembre 2022",
+    title: "Auxiliar administrativo - Julian Lopez",
+    description:
+      "Gestión administrativa del despacho de abogados de Julian Lopez Gonzalez, además de desarrollo de software interno para la empresa: \
+ Aplicación Web en PHP y Javascript para la gestión integral de los honorarios del letrado; \
+ Aplicación para escritorio en .NET y WPF para el envío automatizado de escritos internos a través de plantillas en docx; \
+ Diversos scripts en Python para la automatización de tareas menores.",
+  },
+  {
+    date: "Enero 2015 - Abril 2017",
+    title: "Desarrollador Web Full-Stack - Freelance",
+    description:
+      "Desarrollo de aplicaciones web para clientes de forma independiente, utilizando tecnologías como PHP, Javascript, HTML, CSS, MySQL, etc.",
+  }
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
