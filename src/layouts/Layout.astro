@@ -25,9 +25,9 @@ const { description, title } = Astro.props
     <ViewTransitions />
   </head>
 
-  <body class="relative text-black dark:text-white">
+  <body class="relative text-white">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-100 dark:bg-neutral-950 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r"
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 from-gray-900 to-gray-600 bg-gradient-to-r dark:bg-neutral-950 dark:from-gray-900 dark:to-gray-600 dark:bg-gradient-to-r"
     >
     </div>
     <Header />
@@ -116,6 +116,6 @@ const { description, title } = Astro.props
   }
 
   .link-active {
-        @apply bg-white/40 font-semibold dark:bg-white/15 shadow-lg shadow-white/20 backdrop-blur-2xl;
+        @apply font-semibold bg-white/15 shadow-lg shadow-white/20 backdrop-blur-2xl;
       }
 </style>
